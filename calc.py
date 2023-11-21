@@ -5,6 +5,12 @@ def sumar(x, y):
 def restar(x, y):
    return x - y
  
+def multiplicar(x, y):
+   return x * y
+
+def dividir(x, y):
+   return x / y
+ 
 # MENU
 print("Seleccionar operacion:")
 print("1. Sumar")
@@ -23,9 +29,10 @@ elif choice == '2':
    print(num1,"-",num2,"=", restar(num1,num2))
  
 elif choice == '3':
-   print(" << AUN NO ESTA IMPLEMENTADO!  >>")
+    print (num1,"*",num2,"=", multiplicar(num1,num2))
  
 elif choice == '4':
-   print(" << AUN NO ESTA IMPLEMENTADO!  >>")
+    print (num1,"/",num2,"=", dividir(num1,num2))
+    
 else:
    print("******* Dato invalido! **********")
